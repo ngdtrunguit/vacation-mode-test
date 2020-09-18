@@ -7,7 +7,7 @@ jobs:
     name: Update Vacation Mode
     steps:
     - name: vacation mode action step
-      uses: actions/vacation-mode-action@v1
+      uses: robotnyc/vacation-mode-action@v1
 #       if: contains(github.event.issue.labels.*.name, 'support')
       with:
         limit-group: 'collaborators_only'
