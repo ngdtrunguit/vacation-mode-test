@@ -9,5 +9,4 @@ jobs:
     - name: vacation mode action step
       uses: robotnyc/vacation-mode-action@v1
       with:
-        myToken: ${{ secrets.GITHUB_TOKEN }}
         limit-group: 'collaborators_only'
