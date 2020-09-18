@@ -1,0 +1,13 @@
+on:
+  issues:
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: Update Vacation Mode
+    steps:
+    - name: vacation mode action step
+      uses: actions/vacation-mode-action@main
+#       if: contains(github.event.issue.labels.*.name, 'support')
+      with:
+        limit-group: 'collaborators_only'
