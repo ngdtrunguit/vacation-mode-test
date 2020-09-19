@@ -1,5 +1,10 @@
 on:
+  # Run on issue pinned/unpinned 
   issues:
+    types: [pinned, unpinned]
+  # Run to reset the 24 hour interaction limit timer
+  schedule:
+    - cron: "0 0 * * *"
 
 jobs:
   hello_world_job:
