@@ -7,11 +7,11 @@ on:
     - cron: "0 0 * * *"
 
 jobs:
-  hello_world_job:
+  vacation_mode_job:
     runs-on: ubuntu-latest
     name: Update Vacation Mode
     steps:
-    - name: vacation mode action step
-      uses: robotnyc/vacation-mode-action@v1
+    - uses: robotnyc/vacation-mode-action@v1
       with:
         limit-group: 'collaborators_only'
+        github-api-token: ${{ secrets.GITHUB_TOKEN }}
