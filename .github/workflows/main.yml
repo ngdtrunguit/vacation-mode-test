@@ -13,4 +13,5 @@ jobs:
     - uses: robotnyc/vacation-mode-action@v1
       with:
         limit-group: 'collaborators_only'
+        vacation-mode-activated: '![vacation-mode-activated](https://i.imgflip.com/18t5ch.jpg)'
         GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
