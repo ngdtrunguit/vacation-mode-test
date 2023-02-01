@@ -1,6 +1,7 @@
 name: Vacation Mode
 on:
   # Run on issue activity
+  workflow_dispatch:
   issues:
   # Run to reset the 24 hour interaction limit timer
   schedule:
